@@ -1,0 +1,88 @@
+// ------------------------------------------------------------------------
+// Konstruktor
+// ------------------------------------------------------------------------
+
+// ------------------------------------------------------------------------
+// Public Methoden
+// ------------------------------------------------------------------------
+
+// ------------------------------------------------------------------------
+// Private Methoden
+// ------------------------------------------------------------------------
+
+// ------------------------------------------------------------------------
+// Get- / Set- Methoden
+// ------------------------------------------------------------------------
+
+
+		<!-- 
+		<NonInteractiveObject>
+			<Name>sonnenblumen</Name>	
+			<X>401.273</X>			
+			<Y>-5762.32</Y>			
+			<ViewDirectX>0.0</ViewDirectX>
+			<ViewDirectY>1.0</ViewDirectY>
+		</NonInteractiveObject>
+		<NonInteractiveObject>
+			<Name>sonnenblumen</Name>	
+			<X>401.273</X>			
+			<Y>-6362.32</Y>			
+			<ViewDirectX>0.0</ViewDirectX>
+			<ViewDirectY>1.0</ViewDirectY>
+		</NonInteractiveObject>
+		<NonInteractiveObject>
+			<Name>sonnenblumen</Name>	
+			<X>401.273</X>			
+			<Y>-6962.32</Y>			
+			<ViewDirectX>0.0</ViewDirectX>
+			<ViewDirectY>1.0</ViewDirectY>
+		</NonInteractiveObject>
+		<NonInteractiveObject>
+			<Name>sonnenblumen</Name>	
+			<X>401.273</X>			
+			<Y>-7562.32</Y>			
+			<ViewDirectX>0.0</ViewDirectX>
+			<ViewDirectY>1.0</ViewDirectY>
+		</NonInteractiveObject>
+		<NonInteractiveObject>
+			<Name>sonnenblumen</Name>	
+			<X>401.273</X>			
+			<Y>-8162.32</Y>			
+			<ViewDirectX>0.0</ViewDirectX>
+			<ViewDirectY>1.0</ViewDirectY>
+		</NonInteractiveObject>
+		<NonInteractiveObject>
+			<Name>sonnenblumen</Name>	
+			<X>-201.273</X>			
+			<Y>-5762.32</Y>			
+			<ViewDirectX>0.0</ViewDirectX>
+			<ViewDirectY>1.0</ViewDirectY>
+		</NonInteractiveObject>
+		<NonInteractiveObject>
+			<Name>sonnenblumen</Name>	
+			<X>-801.273</X>			
+			<Y>-6362.32</Y>			
+			<ViewDirectX>0.0</ViewDirectX>
+			<ViewDirectY>1.0</ViewDirectY>
+		</NonInteractiveObject>
+		<NonInteractiveObject>
+			<Name>sonnenblumen</Name>	
+			<X>-1401.273</X>			
+			<Y>-6962.32</Y>			
+			<ViewDirectX>0.0</ViewDirectX>
+			<ViewDirectY>1.0</ViewDirectY>
+		</NonInteractiveObject>
+		<NonInteractiveObject>
+			<Name>sonnenblumen</Name>	
+			<X>-2001.273</X>			
+			<Y>-7562.32</Y>			
+			<ViewDirectX>0.0</ViewDirectX>
+			<ViewDirectY>1.0</ViewDirectY>
+		</NonInteractiveObject>
+		<NonInteractiveObject>
+			<Name>sonnenblumen</Name>	
+			<X>-2601.273</X>			
+			<Y>-8162.32</Y>			
+			<ViewDirectX>0.0</ViewDirectX>
+			<ViewDirectY>1.0</ViewDirectY>
+		</NonInteractiveObject> -->

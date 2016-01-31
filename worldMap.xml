@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<WorldMap>
+	<!-- ***************************** Nodes ***************************** -->
+	<Nodes>
+		<Node id="0"> 	<!-- Node id starts at 0 and must be +1 for each new node -->
+			<X>-400.0</X> <!-- X-Position on the Map -->
+			<Y>-400.0</Y> <!-- X-Position on the Map (Z-Axis in 3D Space) -->
+		</Node>
+		<Node id="1">
+			<X>1527.902</X>
+			<Y>-9369.384</Y>
+		</Node>
+		<Node id="2">
+			<X>3794.453</X>
+			<Y>-10934.656</Y>
+		</Node>
+		<Node id="3">
+			<X>7003.692</X>
+			<Y>-12042.221</Y>
+		</Node>
+		<Node id="4">
+			<X>8622.04</X>
+			<Y>-12430.407</Y>
+		</Node>
+		<Node id="5">
+			<X>8827.43</X>
+			<Y>-13047.552</Y>
+		</Node>
+		<Node id="6">
+			<X>8631.402</X>
+			<Y>-13595.953</Y>
+		</Node>
+		<Node id="7">
+			<X>7761.616</X>
+			<Y>-13595.953</Y>
+		</Node>
+		<Node id="8">
+			<X>1104.395</X>
+			<Y>-17905.158</Y>
+		</Node>
+		<Node id="9">
+			<X>1636.262</X>
+			<Y>-6683.887</Y>
+		</Node>
+		<Node id="10">
+			<X>1636.262</X>
+			<Y>-4376.525</Y>
+		</Node>
+		<Node id="11">
+			<X>3302.619</X>
+			<Y>-4047.115</Y>
+		</Node>
+		<Node id="12">
+			<X>8036.961</X>
+			<Y>-3072.565</Y>
+		</Node>
+		<Node id="13">
+			<X>11107.702</X>
+			<Y>-2936.22</Y>
+		</Node>
+		<Node id="14">
+			<X>12636.585</X>
+			<Y>-2780.513</Y>
+		</Node>
+		<Node id="15">
+			<X>17173.461</X>
+			<Y>-1343.646</Y>
+		</Node>
+		<Node id="16">
+			<X>18601.83</X>
+			<Y>-1149.829</Y>
+		</Node>
+		<Node id="17">
+			<X>17273.127</X>
+			<Y>-3770.561</Y>
+		</Node>
+		<Node id="18">
+			<X>18017.398</X>
+			<Y>-3770.561</Y>
+		</Node>
+		<Node id="19">
+			<X>463.794</X>
+			<Y>-4101.122</Y>
+		</Node>
+		<Node id="20">
+			<X>-550.201</X>
+			<Y>-1618.08</Y>
+		</Node>
+		<Node id="21">
+			<X>-392.323</X>
+			<Y>-522.4</Y>
+		</Node>
+		<Node id="22">
+			<X>2733.601</X>
+			<Y>-745.666</Y>
+		</Node>
+		<Node id="23">
+			<X>-279.374</X>
+			<Y>1467.366</Y>
+		</Node>
+		<Node id="24">
+			<X>192.825</X>
+			<Y>2324.493</Y>
+		</Node>
+		<Node id="25">
+			<X>305.056</X>
+			<Y>3234.3</Y>
+		</Node>
+		<Node id="26">
+			<X>3180.25</X>
+			<Y>3063.741</Y>
+		</Node>
+		<Node id="27">
+			<X>6269.889</X>
+			<Y>3377.193</Y>
+		</Node>
+		<Node id="28">
+			<X>8757.05</X>
+			<Y>8356.234</Y>
+		</Node>
+		<Node id="29">
+			<X>7482.337</X>
+			<Y>8733.461</Y>
+		</Node>
+		<Node id="30">
+			<X>4717.575</X>
+			<Y>8225.344</Y>
+		</Node>
+		<Node id="31">
+			<X>1459.892</X>
+			<Y>7497.707</Y>
+		</Node>
+		<Node id="32">
+			<X>19.196</X>
+			<Y>4116.813</Y>
+		</Node>
+		<Node id="33">
+			<X>-4288.402</X>
+			<Y>4283.426</Y>
+		</Node>
+		<Node id="34">
+			<X>101.194</X>
+			<Y>-2588.357</Y>
+		</Node>
+		<Node id="35">
+			<X>670.378</X>
+			<Y>4360.001</Y>
+		</Node>
+	</Nodes>
+	
+	<!-- ***************************** Edges ***************************** -->
+	 <!--  isDirected: 			Is this a directed Graph [true / false] ? 
+	 							false means, for every edge, there will be automatically 
+	 							added the edge backwards 
+	 		autoCalculateCosts:	[true / false] if the costs for the edges should be calculated automatically
+	 							if true, the costs will be the length of the edge 
+	 							(length of the vector between the positions)
+	 -->
+	 					
+	<Edges isDirected="false" autoCalculateCosts="true">
+		<Edge>
+			<FromNodeID>0</FromNodeID>		<!-- ID of the starting node -->
+			<ToNodeID>1</ToNodeID>			<!-- ID of the ending node -->
+			<CostToTraverse>300.2</CostToTraverse>	<!-- Higher values = less important for travel -->
+		</Edge>
+		<Edge>
+			<FromNodeID>1</FromNodeID>
+			<ToNodeID>2</ToNodeID>
+			<CostToTraverse>0</CostToTraverse>
+		</Edge>
+		<Edge>
+			<FromNodeID>2</FromNodeID>
+			<ToNodeID>3</ToNodeID>
+			<CostToTraverse>0</CostToTraverse>
+		</Edge>
+		<Edge>
+			<FromNodeID>3</FromNodeID>
+			<ToNodeID>4</ToNodeID>
+			<CostToTraverse>0</CostToTraverse>
+		</Edge>
+		<Edge>
+			<FromNodeID>4</FromNodeID>
+			<ToNodeID>5</ToNodeID>
+			<CostToTraverse>0</CostToTraverse>
+		</Edge>
+		<Edge>
+			<FromNodeID>5</FromNodeID>
+			<ToNodeID>6</ToNodeID>
+			<CostToTraverse>0</CostToTraverse>
+		</Edge>
+		<Edge>
+			<FromNodeID>6</FromNodeID>
+			<ToNodeID>7</ToNodeID>
+			<CostToTraverse>0</CostToTraverse>
+		</Edge>
+		<Edge>
+			<FromNodeID>2</FromNodeID>
+			<ToNodeID>8</ToNodeID>
+			<CostToTraverse>0</CostToTraverse>
+		</Edge>
+		<Edge>
+			<FromNodeID>1</FromNodeID>
+			<ToNodeID>9</ToNodeID>
+			<CostToTraverse>0</CostToTraverse>
+		</Edge>
+		<Edge>
+			<FromNodeID>9</FromNodeID>
+			<ToNodeID>10</ToNodeID>
+			<CostToTraverse>0</CostToTraverse>
+		</Edge>
+		<Edge>
+			<FromNodeID>10</FromNodeID>
+			<ToNodeID>11</ToNodeID>
+			<CostToTraverse>0</CostToTraverse>
+		</Edge>
+		<Edge>
+			<FromNodeID>11</FromNodeID>
+			<ToNodeID>12</ToNodeID>
+			<CostToTraverse>0</CostToTraverse>
+		</Edge>
+		<Edge>
+			<FromNodeID>12</FromNodeID>
+			<ToNodeID>13</ToNodeID>
+			<CostToTraverse>0</CostToTraverse>
+		</Edge>
+		<Edge>
+			<FromNodeID>14</FromNodeID>
+			<ToNodeID>15</ToNodeID>
+			<CostToTraverse>0</CostToTraverse>
+		</Edge>
+		<Edge>
+			<FromNodeID>15</FromNodeID>
+			<ToNodeID>16</ToNodeID>
+			<CostToTraverse>0</CostToTraverse>
+		</Edge>
+		<Edge>
+			<FromNodeID>15</FromNodeID>
+			<ToNodeID>17</ToNodeID>
+			<CostToTraverse>0</CostToTraverse>
+		</Edge>
+		<Edge>
+			<FromNodeID>17</FromNodeID>
+			<ToNodeID>18</ToNodeID>
+			<CostToTraverse>0</CostToTraverse>
+		</Edge>
+		<Edge>
+			<FromNodeID>10</FromNodeID>
+			<ToNodeID>19</ToNodeID>
+			<CostToTraverse>0</CostToTraverse>
+		</Edge>
+		<Edge>
+			<FromNodeID>19</FromNodeID>
+			<ToNodeID>20</ToNodeID>
+			<CostToTraverse>0</CostToTraverse>
+		</Edge>
+		<Edge>
+			<FromNodeID>20</FromNodeID>
+			<ToNodeID>21</ToNodeID>
+			<CostToTraverse>0</CostToTraverse>
+		</Edge>
+		<Edge>
+			<FromNodeID>21</FromNodeID>
+			<ToNodeID>22</ToNodeID>
+			<CostToTraverse>0</CostToTraverse>
+		</Edge>
+		<Edge>
+			<FromNodeID>21</FromNodeID>
+			<ToNodeID>23</ToNodeID>
+			<CostToTraverse>0</CostToTraverse>
+		</Edge>
+		<Edge>
+			<FromNodeID>23</FromNodeID>
+			<ToNodeID>24</ToNodeID>
+			<CostToTraverse>0</CostToTraverse>
+		</Edge>
+		<Edge>
+			<FromNodeID>24</FromNodeID>
+			<ToNodeID>25</ToNodeID>
+			<CostToTraverse>0</CostToTraverse>
+		</Edge>
+		<Edge>
+			<FromNodeID>25</FromNodeID>
+			<ToNodeID>26</ToNodeID>
+			<CostToTraverse>0</CostToTraverse>
+		</Edge>
+		<Edge>
+			<FromNodeID>26</FromNodeID>
+			<ToNodeID>27</ToNodeID>
+			<CostToTraverse>0</CostToTraverse>
+		</Edge>
+		<Edge>
+			<FromNodeID>27</FromNodeID>
+			<ToNodeID>28</ToNodeID>
+			<CostToTraverse>0</CostToTraverse>
+		</Edge>
+		<Edge>
+			<FromNodeID>28</FromNodeID>
+			<ToNodeID>29</ToNodeID>
+			<CostToTraverse>0</CostToTraverse>
+		</Edge>
+		<Edge>
+			<FromNodeID>29</FromNodeID>
+			<ToNodeID>30</ToNodeID>
+			<CostToTraverse>0</CostToTraverse>
+		</Edge>
+		<Edge>
+			<FromNodeID>30</FromNodeID>
+			<ToNodeID>31</ToNodeID>
+			<CostToTraverse>0</CostToTraverse>
+		</Edge>
+		<Edge>
+			<FromNodeID>31</FromNodeID>
+			<ToNodeID>35</ToNodeID>
+			<CostToTraverse>0</CostToTraverse>
+		</Edge>
+		<Edge>
+			<FromNodeID>32</FromNodeID>
+			<ToNodeID>33</ToNodeID>
+			<CostToTraverse>0</CostToTraverse>
+		</Edge>
+		<Edge>
+			<FromNodeID>25</FromNodeID>
+			<ToNodeID>32</ToNodeID>
+			<CostToTraverse>0</CostToTraverse>
+		</Edge>
+		<Edge>
+			<FromNodeID>25</FromNodeID>
+			<ToNodeID>35</ToNodeID>
+			<CostToTraverse>0</CostToTraverse>
+		</Edge>
+		<Edge>
+			<FromNodeID>32</FromNodeID>
+			<ToNodeID>35</ToNodeID>
+			<CostToTraverse>0</CostToTraverse>
+		</Edge>
+		
+		
+	</Edges>
+	
+	<!-- ***************************** Buildings ***************************** 
+		Allowed values for Type:
+			Friedhof, Hotel, Kino, Restaurant, Krankenhaus, Police, Toilet, Bathhouse, Bank, Library, Gym		
+	-->	
+	<Buildings>
+		<Building>
+			<Type>Friedhof</Type>	<!-- The type of the building  -->
+			<X>656.238</X>			<!-- X-Position on the Map -->
+			<Y>-2454.538</Y>		<!-- Y-Position on the Map -->
+		</Building>
+		<Building>
+			<Type>Hotel</Type>
+			<X>7304.55</X>
+			<Y>-13568.898</Y>
+		</Building>
+		<Building>
+			<Type>Hotel</Type>
+			<X>46242.551</X>
+			<Y>-55753.434</Y>
+		</Building>
+		<Building>
+			<Type>Hotel</Type>
+			<X>-35645.266</X>
+			<Y>30279.045</Y>
+		</Building>
+		<Building>
+			<Type>Hotel</Type>
+			<X>-14179.734</X>
+			<Y>17814.271</Y>
+		</Building>
+		<Building>
+			<Type>Hotel</Type>
+			<X>10060.06</X>
+			<Y>-38645.984</Y>
+		</Building>
+		<Building>
+			<Type>Kino</Type>
+			<X>3357.523</X>
+			<Y>4472.358</Y>
+		</Building>
+		<Building>
+			<Type>Kino</Type>
+			<X>-4014.478</X>
+			<Y>-47780.949</Y>
+		</Building>
+		<Building>
+			<Type>Restaurant</Type>
+			<X>2842.189</X>
+			<Y>-6667.041</Y>
+		</Building>
+		<Building>
+			<Type>Restaurant</Type>
+			<X>4434.965</X>
+			<Y>-54637.32</Y>
+		</Building>
+		<Building>
+			<Type>Restaurant</Type>
+			<X>-21238.184</X>
+			<Y>17275.906</Y>
+		</Building>
+		<Building>
+			<Type>Restaurant</Type>
+			<X>-13304.838</X>
+			<Y>35233.277</Y>
+		</Building>
+		<Building>
+			<Type>Restaurant</Type>
+			<X>36125.563</X>
+			<Y>-30970.654</Y>
+		</Building>
+		<Building>
+			<Type>Restaurant</Type>
+			<X>-15486.376</X>
+			<Y>-14421.856</Y>
+		</Building>		
+		<Building>
+			<Type>Krankenhaus</Type>
+			<X>-5459.214</X>
+			<Y>770.665</Y>
+		</Building>
+		<Building>
+			<Type>Police</Type>
+			<X>17553.281</X>
+			<Y>-3792.57</Y>
+		</Building>
+		<Building>
+			<Type>Toilet</Type>
+			<X>764.709</X>
+			<Y>-4881.1</Y>
+		</Building>
+		<Building>
+			<Type>Toilet</Type>
+			<X>24750.209</X>
+			<Y>-41526.328</Y>
+		</Building>
+		<Building>
+			<Type>Toilet</Type>
+			<X>1906.021</X>
+			<Y>-20838.842</Y>
+		</Building>
+		<Building>
+			<Type>Toilet</Type>
+			<X>-22539.811</X>
+			<Y>30381.082</Y>
+		</Building>
+		<Building>
+			<Type>Toilet</Type>
+			<X>-11029.832</X>
+			<Y>37285.137</Y>
+		</Building>
+		<Building>
+			<Type>Toilet</Type>
+			<X>-36350.594</X>
+			<Y>30807.436</Y>
+		</Building>
+		<Building>
+			<Type>Toilet</Type>
+			<X>-16307.257</X>
+			<Y>18059.527</Y>
+		</Building>
+		<Building>
+			<Type>Toilet</Type>
+			<X>6816.292</X>
+			<Y>-13116.676</Y>
+		</Building>
+		<Building>
+			<Type>Toilet</Type>
+			<X>-17595.869</X>
+			<Y>10646.516</Y>
+		</Building>
+		<Building>
+			<Type>Toilet</Type>
+			<X>36228.188</X>
+			<Y>-32266.102</Y>
+		</Building>		
+		<Building>
+			<Type>Bathhouse</Type>
+			<X>2394.7</X>
+			<Y>1576.1</Y>
+		</Building>
+		<Building>
+			<Type>Bathhouse</Type>
+			<X>-26528.379</X>
+			<Y>36058.559</Y>
+		</Building>		
+		<Building>
+			<Type>Bathhouse</Type>
+			<X>27134.977</X>
+			<Y>-41976.094</Y>
+		</Building>
+		<Building>
+			<Type>Bank</Type>
+			<X>9437.338</X>
+			<Y>-5827.155</Y>
+		</Building>
+		<Building>
+			<Type>Library</Type>
+			<X>-2228.3</X>
+			<Y>-2746.8</Y>
+		</Building>
+		<Building>
+			<Type>Library</Type>
+			<X>-24960.342</X>
+			<Y>25369.758</Y>
+		</Building>
+		<Building>
+			<Type>Gym</Type>
+			<X>-20.318</X>
+			<Y>175.905</Y>
+		</Building>
+		<Building>
+			<Type>Gym</Type>
+			<X>-39046.707</X>
+			<Y>35310.961</Y>
+		</Building>		
+	</Buildings>
+	
+	<!-- ***************************** Non-interactive-objects ***************************** 
+		Buildings and non-interactive-objects are not allowed to be on the exact same position on the map!!
+	-->
+	<NonInteractiveObjects>
+		<NonInteractiveObject>
+			<Name>ground</Name>	<!-- Name of the non-interactive-object (must be a valid modelname) -->
+			<X>0.0</X>			<!-- X-Position on the map -->
+			<Y>0.0</Y>			<!-- Y-Position on the map -->
+			<ViewDirectX>0.0</ViewDirectX>
+			<ViewDirectY>0.0</ViewDirectY>
+		</NonInteractiveObject>
+		<NonInteractiveObject>
+			<Name>worldsphere</Name>	
+			<X>0.00001</X>			
+			<Y>0.0</Y>			
+			<ViewDirectX>0.0</ViewDirectX>
+			<ViewDirectY>0.0</ViewDirectY>
+		</NonInteractiveObject>
+		<NonInteractiveObject>
+			<Name>baum1</Name>	
+			<X>699.879</X>			
+			<Y>-4196.404</Y>			
+			<ViewDirectX>0.0</ViewDirectX>
+			<ViewDirectY>0.0</ViewDirectY>
+		</NonInteractiveObject>
+		<NonInteractiveObject>
+			<Name>baum2</Name>	
+			<X>2069.16</X>			
+			<Y>-6446.938</Y>			
+			<ViewDirectX>0.0</ViewDirectX>
+			<ViewDirectY>0.0</ViewDirectY>
+		</NonInteractiveObject>
+		<NonInteractiveObject>
+			<Name>baum3</Name>	
+			<X>6192.439</X>			
+			<Y>-4642.497</Y>	
+			<ViewDirectX>0.0</ViewDirectX>
+			<ViewDirectY>0.0</ViewDirectY>		
+		</NonInteractiveObject>
+		<NonInteractiveObject>
+			<Name>baum4</Name>	
+			<X>1184.115</X>			
+			<Y>3614.005</Y>			
+			<ViewDirectX>1.0</ViewDirectX>
+			<ViewDirectY>0.0</ViewDirectY>
+		</NonInteractiveObject>
+		<NonInteractiveObject>
+			<Name>urban</Name>	
+			<X>403.58</X>			
+			<Y>-11969.369</Y>			
+			<ViewDirectX>0.0</ViewDirectX>
+			<ViewDirectY>1.0</ViewDirectY>
+		</NonInteractiveObject>
+		<NonInteractiveObject>
+			<Name>brunnen</Name>	
+			<X>-44.129</X>			
+			<Y>-1456.198</Y>			
+			<ViewDirectX>0.0</ViewDirectX>
+			<ViewDirectY>1.0</ViewDirectY>
+		</NonInteractiveObject>
+	</NonInteractiveObjects>	 
+</WorldMap>

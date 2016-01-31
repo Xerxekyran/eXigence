@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    version="1.0">
+    <persistence-unit name="eXigence" transaction-type="RESOURCE_LOCAL">
+        <class>eXigence.domain.ExigenceCharacter</class>
+        <class>eXigence.domain.NonPlayerCharacter</class>               
+        <class>eXigence.domain.PlayerProfile</class>
+        <class>eXigence.domain.NonInteractiveObject</class>
+              
+		<class>eXigence.domain.entities.MovingEntity</class>
+		<class>eXigence.domain.entities.VisibleEntity</class>        
+        <class>eXigence.domain.entities.BaseEntity</class>
+                
+        <class>eXigence.domain.entities.buildings.ExigenceBuilding</class>
+        <class>eXigence.domain.entities.buildings.Cinema</class>
+        <class>eXigence.domain.entities.buildings.Graveyard</class>
+        <class>eXigence.domain.entities.buildings.Hospital</class>
+        <class>eXigence.domain.entities.buildings.Hotel</class>
+        <class>eXigence.domain.entities.buildings.Restaurant</class>
+        <class>eXigence.domain.entities.buildings.Toilet</class>
+        <class>eXigence.domain.entities.buildings.Police</class>        
+        <class>eXigence.domain.entities.buildings.Bank</class>
+        <class>eXigence.domain.entities.buildings.Library</class>
+        <class>eXigence.domain.entities.buildings.Bathhouse</class>
+        <class>eXigence.domain.entities.buildings.Gym</class>
+       
+        <class>eXigence.domain.map.WorldMap</class>
+        <class>eXigence.domain.map.AdjacenceList</class>
+        <class>eXigence.domain.map.MapNode</class>
+        <class>eXigence.domain.map.MapEdge</class>
+        <class>eXigence.domain.map.MapEdgeList</class>
+        
+        <class>eXigence.util.math.Vector2D</class>
+                                     
+        <properties>  	                
+	        <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />  
+	        <property name="hibernate.connection.username" value="cypork" />  
+	        <property name="hibernate.connection.password" value="!!pork1" />  
+	        <property name="hibernate.connection.url" value="jdbc:mysql://localhost/exigence" />  
+	        
+	        <property name="hibernate.hbm2ddl.auto" value="update" />
+	        <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
+	        <!--
+	        <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />	          
+	        <property name="hibernate.cache.provider_class" value="org.hibernate.cache.EhCacheProvider" />
+	        -->	    	          
+  		</properties>
+    </persistence-unit>
+</persistence>

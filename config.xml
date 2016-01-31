@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<exigence_config>
+	<!-- 
+	*******************************************************************
+	*********************** [[ Logger ]] ******************************
+	******************************************************************* -->
+	<!-- Starting at which Level the logger should write the Messages 
+	into the File? Available: Debug, Info, Warn, Error -->
+	<LogLevel>Debug</LogLevel>
+	
+	<!-- The File for the logmessages (the logger uses HTML-Syntax)  -->
+	<LogFile>logfile.html</LogFile>
+	
+	<!-- 
+	*******************************************************************
+	****************** [[ NPC parameters ]] ***************************
+	******************************************************************* -->
+	
+	<!-- Use these Settings to set general configurations for Non-Player-Charakters -->
+	<NPCMaxSpeed>1</NPCMaxSpeed>
+	
+	<!-- The mass of a npc (for movement calculations) -->
+	<NPCMass>1</NPCMass>
+	
+	<!-- Maximum Force a npc can use for one update cycle -->
+	<NPCMaxForce>1</NPCMaxForce>
+	
+	<!-- How many rad per Seconds is the npc allowed to turn -->
+	<NPCMaxTurnRate>0.2</NPCMaxTurnRate>
+		
+	<!-- 
+	*******************************************************************
+	**************** [[ steering parameters ]] ************************
+	******************************************************************* --> 	   	
+	<!--
+	Use these Settings to balance the dependencies of each steering-force
+ 	compared to the others -->
+	<SeperationWeight>10.0</SeperationWeight>
+	<SeekWeight>0.5</SeekWeight>
+	<ArriveWeight>1.0</ArriveWeight>
+	
+	<!-- Distance the AI will look for Neighbours (used for the seperation behaviour) -->
+	<ViewDistance>15.0</ViewDistance>
+
+	<!-- Length of the "feelers" for collision-detection with walls -->
+	<WallDetectionFeelerLength>25.0</WallDetectionFeelerLength>
+	
+	<!-- Used for path following: 
+	     Determines how close a bot must be to a waypoint before it seeks 
+	     the next waypoint 
+	 -->
+	<WaypointSeekDistance>5</WaypointSeekDistance>
+	
+	<!-- 
+	*******************************************************************
+	********************** [[ Buildings ]] ****************************
+	******************************************************************* -->
+	
+	<!-- Parameters of the graveyard -->
+	<Graveyard>
+		<Width>3190.469</Width>
+		<Length>1374.617</Length>
+		<Modelname>friedhof</Modelname>
+		<Slots>99999999</Slots>
+		<EmployeeSlots>1</EmployeeSlots>
+		<EntranceX>2155.264</EntranceX>
+		<EntranceY>1306.735</EntranceY>
+		<EmployeeEntranceX>2155.264</EmployeeEntranceX>
+		<EmployeeEntranceY>1306.735</EmployeeEntranceY>
+		<CostMoneyAsCustomer>0</CostMoneyAsCustomer>	
+		<GainMoneyAsEmployee>5</GainMoneyAsEmployee>	
+		<StaytimeSeconds>5</StaytimeSeconds>
+		<EmployeeStaytimeSeconds>15</EmployeeStaytimeSeconds>
+	</Graveyard>
+	
+	<!-- Parameters of the cinema -->
+	<Cinema>
+		<Width>2822.97</Width>
+		<Length>3143.101</Length>
+		<Modelname>kino</Modelname>
+		<Slots>50</Slots>
+		<EmployeeSlots>3</EmployeeSlots>
+		<EntranceX>1600.653</EntranceX>
+		<EntranceY>2939.381</EntranceY>
+		<EmployeeEntranceX>756.672</EmployeeEntranceX>
+		<EmployeeEntranceY>2077.939</EmployeeEntranceY>	
+		<CostMoneyAsCustomer>10</CostMoneyAsCustomer>	
+		<GainMoneyAsEmployee>15</GainMoneyAsEmployee>
+		<StaytimeSeconds>10</StaytimeSeconds>
+		<EmployeeStaytimeSeconds>50</EmployeeStaytimeSeconds>									
+	</Cinema>
+	
+	<!-- Parameters of the hospital -->
+	<Hospital>
+		<Width>3230.409</Width>
+		<Length>3317.717</Length>
+		<Modelname>krankenhaus</Modelname>
+		<Slots>99999999</Slots>
+		<EmployeeSlots>5</EmployeeSlots>
+		<EntranceX>1600.653</EntranceX>
+		<EntranceY>2881.176</EntranceY>
+		<EmployeeEntranceX>582.056</EmployeeEntranceX>
+		<EmployeeEntranceY>3230.409</EmployeeEntranceY>	
+		<CostMoneyAsCustomer>0</CostMoneyAsCustomer>	
+		<GainMoneyAsEmployee>5</GainMoneyAsEmployee>	
+		<StaytimeSeconds>10</StaytimeSeconds>
+		<EmployeeStaytimeSeconds>50</EmployeeStaytimeSeconds>				
+	</Hospital>
+	
+	
+	<!-- Parameters of the hotel -->
+	<Hotel>
+		<Width>1229.557</Width>
+		<Length>1134.975</Length>
+		<Modelname>hotel</Modelname>
+		<Slots>20</Slots>
+		<EmployeeSlots>5</EmployeeSlots>
+		<EntranceX>599.015</EntranceX>
+		<EntranceY>893.268</EntranceY>
+		<EmployeeEntranceX>0.0</EmployeeEntranceX>
+		<EmployeeEntranceY>599.015</EmployeeEntranceY>	
+		<CostMoneyAsCustomer>10</CostMoneyAsCustomer>	
+		<GainMoneyAsEmployee>15</GainMoneyAsEmployee>	
+		<StaytimeSeconds>10</StaytimeSeconds>
+		<EmployeeStaytimeSeconds>50</EmployeeStaytimeSeconds>				
+	</Hotel>
+	
+	<!-- Parameters of the restaurant -->
+	<Restaurant>
+		<Width>2243.086</Width>
+		<Length>2099.035</Length>
+		<Modelname>restaurant</Modelname>
+		<Slots>20</Slots>
+		<EmployeeSlots>4</EmployeeSlots>
+		<EntranceX>617.363</EntranceX>
+		<EntranceY>2243.086</EntranceY>
+		<EmployeeEntranceX>617.363</EmployeeEntranceX>
+		<EmployeeEntranceY>0.0</EmployeeEntranceY>	
+		<CostMoneyAsCustomer>10</CostMoneyAsCustomer>	
+		<GainMoneyAsEmployee>5</GainMoneyAsEmployee>	
+		<StaytimeSeconds>10</StaytimeSeconds>
+		<EmployeeStaytimeSeconds>50</EmployeeStaytimeSeconds>				
+	</Restaurant>
+	
+	<!-- Parameters of the police -->
+	<Police>
+		<Width>2136.757</Width>
+		<Length>2095.666</Length>
+		<Modelname>police</Modelname>
+		<Slots>20</Slots>
+		<EmployeeSlots>4</EmployeeSlots>
+		<EntranceX>1046.019</EntranceX>
+		<EntranceY>1569.028</EntranceY>
+		<EmployeeEntranceX>697.346</EmployeeEntranceX>
+		<EmployeeEntranceY>217.921</EmployeeEntranceY>	
+		<CostMoneyAsCustomer>10</CostMoneyAsCustomer>	
+		<GainMoneyAsEmployee>20</GainMoneyAsEmployee>	
+		<StaytimeSeconds>12</StaytimeSeconds>
+		<EmployeeStaytimeSeconds>50</EmployeeStaytimeSeconds>				
+	</Police>
+	
+	<!-- Parameters of the toilet -->
+	<Toilet>
+		<Width>371.061</Width>
+		<Length>363.785</Length>
+		<Modelname>dixi</Modelname>
+		<Slots>1</Slots>
+		<EmployeeSlots>0</EmployeeSlots>
+		<EntranceX>192.806</EntranceX>
+		<EntranceY>323.768</EntranceY>
+		<EmployeeEntranceX>192.806</EmployeeEntranceX>
+		<EmployeeEntranceY>323.768</EmployeeEntranceY>	
+		<CostMoneyAsCustomer>2</CostMoneyAsCustomer>	
+		<GainMoneyAsEmployee>5</GainMoneyAsEmployee>	
+		<StaytimeSeconds>12</StaytimeSeconds>
+		<EmployeeStaytimeSeconds>10</EmployeeStaytimeSeconds>				
+	</Toilet>
+
+	<!-- Parameters of the bank -->
+	<Bank>
+		<Width>3282.246</Width>
+		<Length>2439.899</Length>
+		<Modelname>bank</Modelname>
+		<Slots>1</Slots>
+		<EmployeeSlots>2</EmployeeSlots>
+		<EntranceX>1725.292</EntranceX>
+		<EntranceY>1959.798</EntranceY>
+		<EmployeeEntranceX>1725.292</EmployeeEntranceX>
+		<EmployeeEntranceY>699.779</EmployeeEntranceY>	
+		<CostMoneyAsCustomer>2</CostMoneyAsCustomer>	
+		<GainMoneyAsEmployee>5</GainMoneyAsEmployee>	
+		<StaytimeSeconds>12</StaytimeSeconds>
+		<EmployeeStaytimeSeconds>10</EmployeeStaytimeSeconds>				
+	</Bank>
+
+	<!-- Parameters of the gym -->
+	<Gym>
+		<Width>1172.99</Width>
+		<Length>1358.199</Length>
+		<Modelname>gym</Modelname>
+		<Slots>3</Slots>
+		<EmployeeSlots>0</EmployeeSlots>
+		<EntranceX>0.0</EntranceX>
+		<EntranceY>1162.701</EntranceY>
+		<EmployeeEntranceX>0.0</EmployeeEntranceX>
+		<EmployeeEntranceY>1162.701</EmployeeEntranceY>	
+		<CostMoneyAsCustomer>2</CostMoneyAsCustomer>	
+		<GainMoneyAsEmployee>5</GainMoneyAsEmployee>	
+		<StaytimeSeconds>12</StaytimeSeconds>
+		<EmployeeStaytimeSeconds>10</EmployeeStaytimeSeconds>				
+	</Gym>
+	
+	<!-- Parameters of the library -->
+	<Library>
+		<Width>1646.302</Width>
+		<Length>956.913</Length>
+		<Modelname>library</Modelname>
+		<Slots>5</Slots>
+		<EmployeeSlots>0</EmployeeSlots>
+		<EntranceX>1646.302</EntranceX>
+		<EntranceY>956.913</EntranceY>
+		<EmployeeEntranceX>1646.302</EmployeeEntranceX>
+		<EmployeeEntranceY>956.913</EmployeeEntranceY>	
+		<CostMoneyAsCustomer>2</CostMoneyAsCustomer>	
+		<GainMoneyAsEmployee>5</GainMoneyAsEmployee>	
+		<StaytimeSeconds>12</StaytimeSeconds>
+		<EmployeeStaytimeSeconds>10</EmployeeStaytimeSeconds>				
+	</Library>
+	
+	<!-- Parameters of the bathhouse -->
+	<Bathhouse>
+		<Width>1999.298</Width>
+		<Length>1190.759</Length>
+		<Modelname>badehaus</Modelname>
+		<Slots>4</Slots>
+		<EmployeeSlots>2</EmployeeSlots>
+		<EntranceX>667.916</EntranceX>
+		<EntranceY>1235.532</EntranceY>
+		<EmployeeEntranceX>1387.568</EmployeeEntranceX>
+		<EmployeeEntranceY>1235.532</EmployeeEntranceY>	
+		<CostMoneyAsCustomer>2</CostMoneyAsCustomer>	
+		<GainMoneyAsEmployee>20</GainMoneyAsEmployee>	
+		<StaytimeSeconds>12</StaytimeSeconds>
+		<EmployeeStaytimeSeconds>20</EmployeeStaytimeSeconds>				
+	</Bathhouse>
+	
+</exigence_config>
